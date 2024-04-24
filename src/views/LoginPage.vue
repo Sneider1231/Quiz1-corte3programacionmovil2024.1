@@ -13,14 +13,15 @@
         </ion-toolbar>
       </ion-header>
       <div id="login-container">
-        <img src="\public\escudo fac simbolos.jpg" alt="Imagen de Escudo de la Fuerza Aerea" id="cart-image" />
-      
+        <!-- Componente de imagen -->
+        <ImagenComponent id="miImagen" imageUrl="public\escudo fac simbolos (1).jpg" altText="imagen" />
+
         <div id="description">
           <p>Bienvenido a la fuerza aerea.</p>
           <p>Así se va a las Estrellas.</p>
         </div>
       
-        <div>
+        <div id="login-form">
           <InputComponent id="user" name="Nombre" label="Nombre: " style="color: black;" />
           <InputComponent type="number" id="tel" name="Celular" label="Celular: " style="color: black;" />
           <InputComponent type="email" id="email" name="correo" label="Email: " style="color: black;" />
@@ -49,6 +50,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonAlert, IonButton } from '@ionic/vue';
 import ButtonComponent from '@/components/ButtonComponent.vue';
 import InputComponent from '@/components/InputComponent.vue';
+import ImagenComponent from '@/components/ImagenComponent.vue';
 const alertButtons = ['Action'];
 </script>
 
